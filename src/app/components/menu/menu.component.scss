@@ -1,0 +1,35 @@
+@use '../../../styles.scss' as *;
+
+.container {
+    width: 100%;
+    padding: 1rem 5rem 1rem 2rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 20%;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    gap: 10%;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: $white-color;
+    font-family: 'dearest', sans-serif;
+    cursor: pointer;
+
+    .logo img {
+        width: 2rem;
+    }
+}
+
+.brand span:hover {
+    transition: all 1s ease;
+  color: $primary-dark-color;
+  filter: contrast(200%) brightness(1.5);
+}
